@@ -1,0 +1,83 @@
+.wrap {
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    position: absolute;
+    transition: all 0.5s ease-in 0s;
+    div {
+        float: left;
+        text-align: center;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.button {
+    width: 30px;
+    position: absolute;
+    z-index: 10;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    height: 44px;
+}
+
+.pre-view {
+    left: 120px
+}
+
+.next-view {
+    right: 120px;
+}
+
+.pre, .next {
+    width: 30px;
+    height: 44px;
+    display: block;
+    cursor: pointer;
+}
+
+.pre {
+    background: url(../assets/left.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.next {
+    background: url(../assets/right.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+.banner-warp {
+    width: 100%;
+    height: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#banner1, #banner2, #banner3 {
+    height: 450px;
+    width: 100%;
+    background-position: center center;
+    cursor: pointer;
+}
+
+#banner1 {
+    background: url(../assets/banner1@1.5x.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#banner2 {
+    background: url(../assets/banner2@1.5x.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
+
+#banner3 {
+    background: url(../assets/banner3@1.5x.jpg) 0 0 no-repeat;
+    background-size: cover;
+}
