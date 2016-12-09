@@ -28,9 +28,9 @@ export default {
       pre.onclick = function () {
         self.pre(carousel, len);
       };
-      // setInterval(function(){
-      //   self.next(carousel, len);
-      // }, 4000);
+      setInterval(function(){
+        self.next(carousel, len);
+      }, 4000);
     },
     next(carousel, len) {
       var self = this;

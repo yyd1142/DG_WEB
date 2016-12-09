@@ -22,12 +22,12 @@
       </div>
     </div>
     <div class="home-main background-style-one">
-      <div class="home-title" style="width: 400px;"><i></i>消防安全管理智能云平台<i></i></div>
+      <div class="home-title" style="width: 377px;"><i></i>消防安全管理智能云平台<i></i></div>
       <div class="home-content">消防安全管理智能云平台：整合云计算、大数据、物联网、移动互联网等前沿科技精髓，创新消防业务流程，促进社会安全共同治理，提升公共安全管理水平。</div>
       <img class="home-content-image" src="/static/images/content.png" />
     </div>
     <div class="home-main">
-      <div class="home-title" style="width: 190px;"><i></i>平台优势<i></i></div>
+      <div class="home-title" style="width: 227px;"><i></i>平台优势<i></i></div>
       <ul class="pingtaiyoushi-table-view">
         <li class="pingtaiyoushi-table-cell">
           <div><i class="pingtaiyoushi-icon pingtai1"></i></div>
@@ -46,8 +46,8 @@
         </li>
       </ul>
     </div>
-    <div class="home-main background-style-one" style="padding-top: 100px;" id="product">
-      <div class="home-title" style="width: 190px;"><i></i>主要功能<i></i></div>
+    <div class="home-main background-style-one" id="product">
+      <div class="home-title" style="width: 227px;"><i></i>主要功能<i></i></div>
       <div class="gongneng-main" style="margin-top: 213px;">
         <img class="gongneng-image-left" src="/static/images/content1.png" />
         <div class="gongnegn-title-right">智能的实时监控手段，物联网应用</div>
@@ -70,7 +70,7 @@
       </div>
     </div>
     <div class="home-main">
-      <div class="home-title" style="width: 190px;"><i></i>合作伙伴<i></i></div>
+      <div class="home-title" style="width: 227px;"><i></i>合作伙伴<i></i></div>
       <ul class="hezuo-table-view">
         <li class="hezuo-table-cell">
           <img src="/static/images/partner0.png" />
@@ -92,8 +92,8 @@
         </li>
       </ul>
     </div>
-    <div class="home-main background-style-one" style="padding: 75px 0 83px 0;" id="about">
-      <div class="home-title" style="width: 190px;"><i></i>关于大观<i></i></div>
+    <div class="home-main background-style-one" style="padding-bottom: 83px;" id="about">
+      <div class="home-title" style="width: 227px;"><i></i>关于大观<i></i></div>
       <i class="about-logo-icon"></i>
       <div class="daguan-item">聚远见，有大观</div>
       <div class="daguan-content">
@@ -109,7 +109,7 @@
           <li class="footer-table-cell">0755-86964372</li>
         </ul>
         <ul class="footer-table-view">
-          <li class="footer-table-cell">深圳总部</li>
+          <li class="footer-table-cell">无锡分部</li>
           <li class="footer-table-cell">无锡市滨湖区鸿桥路801号816室<br>现代国际工业设计大厦</li>
           <li class="footer-table-cell">0510-85899382</li>
         </ul>

@@ -122,23 +122,26 @@
     font-size: 20px;
     height: 26px;
     margin: 0 auto;
+    text-align: center;
+    position: relative;
     i {
         background: url(/static/images/topbar-press.png)0 0 no-repeat;
         background-size: cover;
         width: 40px;
         height: 2px;
         margin-top: 13px;
+        position: absolute;
     }
     i:first-child {
-        float: left;
+        left: 0;
     }
     i:last-child {
-        float: right;
+        right: 0;
     }
 }
 
 .home-content {
-    width: 490px;
+    width: 566px;
     text-align: center;
     margin: 24px auto 0 auto;
     font-size: 14px;
@@ -153,7 +156,7 @@
 
 @marginLeft: 167px;
 .pingtaiyoushi-table-view {
-    width: 900px;
+    width: 960px;
     margin: 75px auto 0 auto;
     li:first-child {
         margin-right: @marginLeft;
@@ -164,7 +167,7 @@
 }
 
 .pingtaiyoushi-table-cell {
-    width: 140px;
+    width: 200px;
     text-align: center;
     display: inline-table;
     margin-bottom: 70px;
@@ -233,7 +236,7 @@
 .gongnegn-title-right, .gongneng-content-right {
     width: 310px;
     float: right;
-    text-align: right;
+    text-align: left;
 }
 
 .gongnegn-title-right {
@@ -254,7 +257,7 @@
 }
 
 .gongnegn-title-left, .gongneng-content-left {
-    width: 324px;
+    width: 360px;
     float: left;
     text-align: left;
 }
