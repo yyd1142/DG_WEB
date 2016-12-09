@@ -3,8 +3,8 @@
 		<nav class="header-view">
 			<div class="header-logo"></div>
 			<ul class="header-table-view">
-				<li class="header-table-cell" :class="item.active" v-for="(item, index) in headItems" @click="tab(index)">
-					<router-link :to="item.url" v-text="item.title"></router-link>
+				<li class="header-table-cell" :class="item.active" v-for="(item, index) in headItems" @click="tab(item, index)">
+					<a v-text="item.title"></a>
 				</li>
 			</ul>
 		</nav>
@@ -12,9 +12,9 @@
 </template>
 <script type="text/javascript">
 var headItems = [{name: 'home', active: 'home-active', url: '/#top', title: '首页'},
-{name: 'product', active: '', url: '/#top', title: '产品'},
-{name: 'about', active: '', url: '/#top', title: '关于'},
-{name: 'us', active: '', url: '/#top', title: '我们'}];
+{name: 'product', active: '', url: '/#product', title: '产品'},
+{name: 'about', active: '', url: '/#about', title: '关于'},
+{name: 'us', active: '', url: '/#us', title: '我们'}];
 export default {
     data() {
         return {
@@ -22,7 +22,7 @@ export default {
         }
     },
 	methods: {
-		tab(index){
+		tab(item, index){
 			let self = this;
 			this.headItems.forEach(function(obj){
 				if(self.headItems.indexOf(obj) == index){
@@ -31,6 +31,7 @@ export default {
 					obj.active = '';
 				}
 			});
+			window.location.href = item.url;
 		}
 	}
 }

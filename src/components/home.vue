@@ -12,6 +12,11 @@
           <div id="banner3"></div>
         </div>
       </div>
+      <ul class="slider-number-view">
+        <li class="slider-number-cell" v-for='(item, index) in sliderItem'>
+          <i :class="item.active"></i>
+        </li>
+      </ul>
       <div class="button next-view">
         <i class="next"></i>
       </div>
@@ -41,7 +46,7 @@
         </li>
       </ul>
     </div>
-    <div class="home-main background-style-one" style="padding-top: 100px;">
+    <div class="home-main background-style-one" style="padding-top: 100px;" id="product">
       <div class="home-title" style="width: 190px;"><i></i>主要功能<i></i></div>
       <div class="gongneng-main" style="margin-top: 213px;">
         <img class="gongneng-image-left" src="/static/images/content1.png" />
@@ -87,7 +92,7 @@
         </li>
       </ul>
     </div>
-    <div class="home-main background-style-one" style="padding: 75px 0 83px 0;">
+    <div class="home-main background-style-one" style="padding: 75px 0 83px 0;" id="about">
       <div class="home-title" style="width: 190px;"><i></i>关于大观<i></i></div>
       <i class="about-logo-icon"></i>
       <div class="daguan-item">聚远见，有大观</div>
@@ -95,7 +100,7 @@
         深圳前海大观信息技术有限公司成立于2014年，是一家专注于行业大数据解决方案规划及应用服务的高新技术企业。公司拥有成熟、专业的大数据技术研发团队，硕士以上学历人员超过80%。大数据思维和分析模型研发是公司的核心竞争力，公司会根据客户的定制化需求，提供专业、全面、透彻的大数据解决方案规划和应用服务。
       </div>
     </div>
-    <div class="home-main background-style-two">
+    <div class="home-main background-style-two" id="us">
       <div class="footer-title">促进社会共同治理，携手共建城市安全</div>
       <div class="footer-main">
         <ul class="footer-table-view">
