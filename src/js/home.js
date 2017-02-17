@@ -1,13 +1,31 @@
 import headerComponent from '../components/header.vue'
 var i = 0;
+var timer = null;
 export default {
   data() {
     return {
-      sliderItem: [{ active: 'slider-active' }, { active: '' }, { active: '' }]
+      sliderItem: [{ active: 'slider-active' }, { active: '' }, { active: '' }],
+      timerValue: {
+        carousel: '',
+        len: ''
+      }
     }
   },
   mounted() {
+    let self = this;
     this.initBannerSlider();
+    this.$nextTick(function () {
+      $(".banner-warp").mouseover(function () {
+        clearInterval(timer);
+      });
+      $(".banner-warp").mouseout(function () {
+        self.next(self.timerValue.carousel, self.timerValue.len);
+        let loopTimer = function () {
+          self.next(self.timerValue.carousel, self.timerValue.len);
+        };
+        timer = setInterval(loopTimer, 4000);
+      });
+    });
   },
   methods: {
     initBannerSlider() {
@@ -28,12 +46,18 @@ export default {
       pre.onclick = function () {
         self.pre(carousel, len);
       };
-      setInterval(function(){
+      var loopTimer = function () {
         self.next(carousel, len);
-      }, 4000);
+      };
+      self.next(carousel, len);
+      timer = setInterval(loopTimer, 4000);
     },
     next(carousel, len) {
       var self = this;
+      this.timerValue = {
+        carousel: carousel,
+        len: len
+      }
       var left = carousel.style.left;
       if (i < len - 1) {
         carousel.style.left = (parseInt(left) - 100) + "%";
@@ -43,16 +67,20 @@ export default {
         carousel.style.left = "0%";
         i = 0;
       }
-      this.sliderItem.forEach(function(item){
-        if(self.sliderItem.indexOf(item) == i){
+      this.sliderItem.forEach(function (item) {
+        if (self.sliderItem.indexOf(item) == i) {
           item.active = 'slider-active';
-        }else{
+        } else {
           item.active = '';
         }
       });
     },
     pre(carousel, len) {
       var self = this;
+      this.timerValue = {
+        carousel: carousel,
+        len: len
+      }
       var left = carousel.style.left;
       if (i > 0) {
         carousel.style.left = (parseInt(left) + 100) + "%";
@@ -61,10 +89,10 @@ export default {
         carousel.style.left = -parseInt(carousel.style.width) + 100 + "%";
         i = len - 1;
       }
-      this.sliderItem.forEach(function(item){
-        if(self.sliderItem.indexOf(item) == i){
+      this.sliderItem.forEach(function (item) {
+        if (self.sliderItem.indexOf(item) == i) {
           item.active = 'slider-active';
-        }else{
+        } else {
           item.active = '';
         }
       });

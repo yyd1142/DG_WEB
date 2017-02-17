@@ -7,8 +7,8 @@
       </div>
       <div class="wrap">
         <div class="carousel">
-          <div id="banner1"></div>
           <div id="banner2"></div>
+          <div id="banner1"></div>
           <div id="banner3"></div>
         </div>
       </div>
@@ -24,7 +24,7 @@
     <div class="home-main background-style-one">
       <div class="home-title" style="width: 377px;"><i></i>消防安全管理智能云平台<i></i></div>
       <div class="home-content">消防安全管理智能云平台：整合云计算、大数据、物联网、移动互联网等前沿科技精髓，创新消防业务流程，促进社会安全共同治理，提升公共安全管理水平。</div>
-      <img class="home-content-image" src="/static/images/content.png" />
+      <img class="home-content-image" src="http://dgres.oss-cn-shenzhen.aliyuncs.com/web/content1.png" />
     </div>
     <div class="home-main">
       <div class="home-title" style="width: 227px;"><i></i>平台优势<i></i></div>
@@ -69,7 +69,7 @@
         <div class="gongneng-content-left">接入4G数字化单兵终端，以及车载、无人机等图传信号，融合全方位态势感知单元，汇聚和分析实时态势数据，为消防现场应急指挥提供科学的决策依据。</div>
       </div>
     </div>
-    <div class="home-main">
+    <div class="home-main" id="huoban">
       <div class="home-title" style="width: 227px;"><i></i>合作伙伴<i></i></div>
       <ul class="hezuo-table-view">
         <li class="hezuo-table-cell">
@@ -119,9 +119,9 @@
       </div>
     </div>
     <div class="home-main background-style-three">
-        <i class="footer-dg-icon"></i>
-        <div class="footer-dg-address">深圳市南山区海岸城C座1002<br>400-800-1234</div>
-        <div class="Copyright">Copyright © 2016 深圳前海大观信息技术有限公司  粤ICP备11234560号-1</div>
+      <i class="footer-dg-icon"></i>
+      <div class="footer-dg-address">深圳市南山区海岸城西座1002</div>
+      <div class="Copyright">Copyright © 2016 深圳前海大观信息技术有限公司 粤ICP备11234560号-1</div>
     </div>
   </div>
 </template>

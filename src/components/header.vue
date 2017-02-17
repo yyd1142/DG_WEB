@@ -13,8 +13,8 @@
 <script type="text/javascript">
 var headItems = [{name: 'home', active: 'home-active', url: '/#top', title: '首页'},
 {name: 'product', active: '', url: '/#product', title: '产品'},
-{name: 'about', active: '', url: '/#about', title: '关于'},
-{name: 'us', active: '', url: '/#us', title: '我们'}];
+{name: 'huoban', active: '', url: '/#huoban', title: '合作伙伴'},
+{name: 'about', active: '', url: '/#about', title: '关于我们'}];
 export default {
     data() {
         return {
