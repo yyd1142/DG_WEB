@@ -121,7 +121,7 @@
     <div class="home-main background-style-three">
       <i class="footer-dg-icon"></i>
       <div class="footer-dg-address">深圳市南山区海岸城西座1002</div>
-      <div class="Copyright">Copyright © 2016 深圳前海大观信息技术有限公司 粤ICP备11234560号-1</div>
+      <div class="Copyright">Copyright © 2016 深圳前海大观信息技术有限公司 <a href="http://www.miitbeian.gov.cn">粤ICP备16102264号-1</a></div>
     </div>
   </div>
 </template>
